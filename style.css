@@ -1,0 +1,210 @@
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background-color: aquamarine;
+    color: #000;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    cursor: pointer;
+}
+.nav-left{
+    padding-left: 30px;
+    font-size: 25px;
+    padding-top: 20px;
+}
+.nav-right{
+    padding-right: 30px;
+    font-size: 25px;
+    padding-top: 20px;
+}
+.al{
+    padding: 10px;
+    margin: 10px;
+    text-decoration: none;
+}
+.nav-right button{
+    padding: 10px;
+    border-radius: 30px;
+}
+nav{
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 20px;
+}
+.home h1{
+    padding-top: 90px;
+    font-size: 45px;
+}
+.home p{
+    padding-top: 10px;
+    font-size: 35px;
+}
+.services{
+    padding-left: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.services img{
+    justify-content: space-between;
+}
+
+.services img{
+    height: 340px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.image-box {
+    box-sizing: border-box;
+    width: 30%;
+    margin: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.image-box img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+
+.image-caption h2,
+.image-caption p {
+    margin: 0;
+}
+.allabout h1{
+    font-size: 35px;
+}
+.about p{
+    font-size: 35px;
+    width: 80vw;
+}
+.contact{
+    padding-top: 40px;
+}
+.home{
+    padding-top: 80px;
+}
+
+/* Existing CSS code */
+
+@media only screen and (max-width: 768px) {
+    /* Adjustments for tablets and smaller devices */
+    .nav-left {
+        font-size: 20px;
+    }
+
+    .nav-right {
+        font-size: 20px;
+    }
+
+    .nav-right button {
+        padding: 8px;
+    }
+
+    .home h1 {
+        font-size: 24px;
+    }
+
+    .home p {
+        font-size: 18px;
+    }
+
+    .services {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    .services img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .image-container {
+        max-width: 100%;
+    }
+
+    .image-box {
+        width: 100%;
+        margin: 0;
+    }
+
+    .allabout h1 {
+        font-size: 24px;
+    }
+
+    .about p {
+        font-size: 18px;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .contact {
+        padding: 20px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    /* Adjustments for smaller mobile devices */
+    .nav-left {
+        font-size: 18px;
+    }
+
+    .nav-right {
+        font-size: 18px;
+    }
+
+    .home h1 {
+        font-size: 20px;
+    }
+
+    .home p {
+        font-size: 16px;
+    }
+
+    .services img {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .allabout h1 {
+        font-size: 20px;
+    }
+
+    .about p {
+        font-size: 16px;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .contact {
+        padding: 10px;
+    }
+}
